@@ -29,15 +29,15 @@ def f1Bias_scorer_CV(probs, y, ret_bias=True):
 
 
 def maintain_order(x,increase=True):
-    for i,a in enumerate(x):
-        if i==0:
-            continue
-        if increase:
-            if x[i]<x[i-1]:
-                x[i] = x[i-1]
-        else:
-            if x[i]>x[i-1]:
-                x[i] = x[i-1]
+    # for i,a in enumerate(x):
+    #     if i==0:
+    #         continue
+    #     if increase:
+    #         if x[i]<x[i-1]:
+    #             x[i] = x[i-1]
+    #     else:
+    #         if x[i]>x[i-1]:
+    #             x[i] = x[i-1]
     return x
 
 def smooth_result(result1,window=7,polynomial=3):

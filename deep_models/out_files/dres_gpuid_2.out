@@ -1,0 +1,341 @@
+nohup: ignoring input
+2022-04-14 05:03:18.699408: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+/home/azim/miniconda3/envs/test1/lib/python3.8/site-packages/tensorflow_addons/utils/ensure_tf_install.py:38: UserWarning: You are currently using a nightly version of TensorFlow (2.5.0-dev20210310). 
+TensorFlow Addons offers no support for the nightly versions of TensorFlow. Some things might work, some other might not. 
+If you encounter a bug, do not file an issue on GitHub.
+  warnings.warn(
+2022-04-14 05:03:20.012413: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2022-04-14 05:03:20.060516: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1779] Found device 0 with properties: 
+pciBusID: 0000:19:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2022-04-14 05:03:20.061148: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1779] Found device 1 with properties: 
+pciBusID: 0000:1a:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2022-04-14 05:03:20.062000: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1779] Found device 2 with properties: 
+pciBusID: 0000:67:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2022-04-14 05:03:20.062833: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1779] Found device 3 with properties: 
+pciBusID: 0000:68:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2022-04-14 05:03:20.062871: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2022-04-14 05:03:20.067513: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2022-04-14 05:03:20.067587: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2022-04-14 05:03:20.069207: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2022-04-14 05:03:20.069617: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2022-04-14 05:03:20.071113: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2022-04-14 05:03:20.071625: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2022-04-14 05:03:20.071746: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2022-04-14 05:03:20.076467: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1917] Adding visible gpu devices: 0, 1, 2, 3
+2022-04-14 05:03:20.076776: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-04-14 05:03:20.078437: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1779] Found device 0 with properties: 
+pciBusID: 0000:67:00.0 name: NVIDIA GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2022-04-14 05:03:20.079697: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1917] Adding visible gpu devices: 2
+2022-04-14 05:03:20.079734: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2022-04-14 05:03:20.520792: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-04-14 05:03:20.520846: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1310]      2 
+2022-04-14 05:03:20.520856: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1323] 2:   N 
+2022-04-14 05:03:20.522898: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1464] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9675 MB memory) -> physical GPU (device: 2, name: NVIDIA GeForce RTX 2080 Ti, pci bus id: 0000:67:00.0, compute capability: 7.5)
+4 Physical GPUs, 1 Logical GPU
+<--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--><--> 0.2
+model_name_dres_episode_False_cross_entropy_weight_10_loss_weight_50_is_triplet_False_ratio_0.2_n_cluster_4_lag_15_obs_30
+15 30 4
+[0 1]
+(16178, 15, 95)
+15 95
+(None, 1, 1) coeff (None, 10, 30) amplitude
+2022-04-14 05:03:24.367966: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2022-04-14 05:03:24.384900: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2899885000 Hz
+WARNING:tensorflow:From /home/azim/miniconda3/envs/test1/lib/python3.8/site-packages/tensorflow/python/ops/array_ops.py:5043: calling gather (from tensorflow.python.ops.array_ops) with validate_indices is deprecated and will be removed in a future version.
+Instructions for updating:
+The `validate_indices` argument has no effect. Indices are always validated on CPU and never validated on GPU.
+2022-04-14 05:03:26.587882: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2022-04-14 05:03:27.262324: I tensorflow/stream_executor/cuda/cuda_dnn.cc:334] Loaded cuDNN version 8302
+2022-04-14 05:03:27.881688: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2022-04-14 05:03:27.882276: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+Validation Result now 0.19497334348819495 AUC 0.47098087498973973 step 0 stagnant 0
+Validation Result now 0.211888782358581 AUC 0.5301181974883034 step 20 stagnant 0
+Validation Result now 0.21462043111527648 AUC 0.5530813428547976 step 40 stagnant 0
+Validation Result now 0.21487603305785122 AUC 0.5299269473857013 step 60 stagnant 0
+Validation Result now 0.26900584795321636 AUC 0.6419100385783468 step 80 stagnant 0
+Validation Result now 0.2154024319629415 AUC 0.5721193466305508 step 100 stagnant 0
+Validation Result now 0.21081985499163414 AUC 0.5590954608881228 step 120 stagnant 20
+Validation Result now 0.21199324324324323 AUC 0.5319954034310104 step 140 stagnant 40
+Validation Result now 0.24261874197689345 AUC 0.6071107280636953 step 160 stagnant 60
+Validation Result now 0.25301204819277107 AUC 0.6180185504391364 step 180 stagnant 80
+Validation Result now 0.2633451957295374 AUC 0.60582040548305 step 200 stagnant 100
+Validation Result now 0.30662020905923343 AUC 0.615850775671017 step 220 stagnant 120
+Validation Result now 0.31196581196581197 AUC 0.6189526389230895 step 240 stagnant 0
+Validation Result now 0.31213872832369943 AUC 0.6215710416153657 step 260 stagnant 0
+Validation Result now 0.3185840707964602 AUC 0.6240113272592958 step 280 stagnant 0
+Validation Result now 0.30237580993520513 AUC 0.6318361651481572 step 300 stagnant 0
+Validation Result now 0.27734375 AUC 0.6286481162275303 step 320 stagnant 20
+Validation Result now 0.3295880149812734 AUC 0.6161454485758845 step 340 stagnant 40
+Validation Result now 0.3575883575883576 AUC 0.6041992940983337 step 360 stagnant 0
+Validation Result now 0.30985915492957744 AUC 0.5932906509070015 step 380 stagnant 0
+Validation Result now 0.30567685589519655 AUC 0.5740441598949355 step 400 stagnant 20
+Validation Result now 0.35000000000000003 AUC 0.6041869818599688 step 420 stagnant 40
+Validation Result now 0.38216560509554137 AUC 0.587544939670032 step 440 stagnant 60
+Validation Result now 0.4097995545657015 AUC 0.6091611261594025 step 460 stagnant 0
+Validation Result now 0.3925233644859813 AUC 0.5910752688172043 step 480 stagnant 0
+Validation Result now 0.3486238532110092 AUC 0.5976220963637855 step 500 stagnant 20
+Validation Result now 0.3660714285714286 AUC 0.591859968808996 step 520 stagnant 40
+Validation Result now 0.33187772925764186 AUC 0.585470737913486 step 540 stagnant 60
+Validation Result now 0.33853006681514475 AUC 0.5717926619059346 step 560 stagnant 80
+Validation Result now 0.3378995433789954 AUC 0.5590634490683739 step 580 stagnant 100
+Validation Result now 0.32432432432432434 AUC 0.5263227448083395 step 600 stagnant 120
+Validation Result now 0.32 AUC 0.5250570467044242 step 620 stagnant 140
+Validation Result now 0.31101511879049676 AUC 0.5202585570056637 step 640 stagnant 160
+Validation Result now 0.33027522935779824 AUC 0.5217409505048016 step 660 stagnant 180
+Validation Result now 0.331002331002331 AUC 0.6112771895263893 step 680 stagnant 200
+_15_obs_30____460.h5
+15 95
+(None, 1, 1) coeff (None, 10, 30) amplitude
+Validation Result now 0.1854210898796886 AUC 0.40836903882459163 step 0 stagnant 0
+Validation Result now 0.18680926916221033 AUC 0.4129803825002052 step 20 stagnant 0
+Validation Result now 0.1918340894361633 AUC 0.49187310186325206 step 40 stagnant 0
+Validation Result now 0.18062088428974601 AUC 0.5003496675695641 step 60 stagnant 0
+Validation Result now 0.3008474576271187 AUC 0.5415546252975457 step 80 stagnant 20
+Validation Result now 0.34070796460176994 AUC 0.5535368956743003 step 100 stagnant 0
+Validation Result now 0.36363636363636365 AUC 0.583964540753509 step 120 stagnant 0
+Validation Result now 0.3196125907990315 AUC 0.5261881310022162 step 140 stagnant 0
+Validation Result now 0.2970711297071129 AUC 0.4942846589509974 step 160 stagnant 20
+Validation Result now 0.3839285714285714 AUC 0.5893302142329475 step 180 stagnant 40
+Validation Result now 0.43458980044345896 AUC 0.6097463678896824 step 200 stagnant 0
+Validation Result now 0.2729211087420042 AUC 0.49019042928671097 step 220 stagnant 0
+Validation Result now 0.3144963144963145 AUC 0.5534154149224328 step 240 stagnant 20
+Validation Result now 0.3349056603773585 AUC 0.5561717146843963 step 260 stagnant 40
+Validation Result now 0.2908277404921701 AUC 0.5102306492653698 step 280 stagnant 60
+Validation Result now 0.2928709055876686 AUC 0.5171189362226052 step 300 stagnant 80
+Validation Result now 0.26530612244897955 AUC 0.48644997127144385 step 320 stagnant 100
+Validation Result now 0.26476578411405294 AUC 0.4650201099893294 step 340 stagnant 120
+Validation Result now 0.2832980972515856 AUC 0.48457522777640977 step 360 stagnant 140
+Validation Result now 0.3133047210300429 AUC 0.52564721333005 step 380 stagnant 160
+Validation Result now 0.26859504132231404 AUC 0.4930829844865797 step 400 stagnant 180
+Validation Result now 0.26556016597510373 AUC 0.46393827464499715 step 420 stagnant 200
+_15_obs_30____200.h5
+15 95
+(None, 1, 1) coeff (None, 10, 30) amplitude
+Validation Result now 0.20298879202988793 AUC 0.5183862759583026 step 0 stagnant 0
+Validation Result now 0.19958592132505173 AUC 0.5063892308955102 step 20 stagnant 0
+Validation Result now 0.180327868852459 AUC 0.5039341705655421 step 40 stagnant 20
+Validation Result now 0.18906942392909898 AUC 0.5299696298120332 step 60 stagnant 40
+Validation Result now 0.2966507177033493 AUC 0.5878847574489042 step 80 stagnant 60
+Validation Result now 0.2729211087420042 AUC 0.5944980710826562 step 100 stagnant 0
+Validation Result now 0.29493087557603687 AUC 0.5920840515472379 step 120 stagnant 20
+Validation Result now 0.32195121951219513 AUC 0.6043733070672248 step 140 stagnant 40
+Validation Result now 0.2869565217391304 AUC 0.614901912501026 step 160 stagnant 0
+Validation Result now 0.3324937027707809 AUC 0.6149749651153246 step 180 stagnant 20
+Validation Result now 0.2972972972972973 AUC 0.6154871542313058 step 200 stagnant 0
+Validation Result now 0.30205949656750575 AUC 0.58641385537224 step 220 stagnant 20
+Validation Result now 0.296629213483146 AUC 0.5879118443733071 step 240 stagnant 40
+Validation Result now 0.27499999999999997 AUC 0.5919239924484938 step 260 stagnant 60
+Validation Result now 0.2914798206278027 AUC 0.5936017401296889 step 280 stagnant 80
+Validation Result now 0.27789473684210525 AUC 0.5831847656570632 step 300 stagnant 100
+Validation Result now 0.30275229357798167 AUC 0.6141902651235328 step 320 stagnant 120
+Validation Result now 0.29439252336448596 AUC 0.619996716736436 step 340 stagnant 140
+Validation Result now 0.26694045174537984 AUC 0.6165813018140032 step 360 stagnant 160
+Validation Result now 0.271604938271605 AUC 0.6133620618895181 step 380 stagnant 180
+Validation Result now 0.26138613861386134 AUC 0.6210892226873512 step 400 stagnant 200
+_15_obs_30____180.h5
+15 95
+(None, 1, 1) coeff (None, 10, 30) amplitude
+Validation Result now 0.1949740034662045 AUC 0.4956086349831732 step 0 stagnant 0
+Validation Result now 0.2166301969365427 AUC 0.556802101288681 step 20 stagnant 0
+Validation Result now 0.19559902200488996 AUC 0.5096125748994501 step 40 stagnant 0
+Validation Result now 0.17036506800286327 AUC 0.4526060904539112 step 60 stagnant 20
+Validation Result now 0.17942768754833718 AUC 0.5098054666338341 step 80 stagnant 40
+Validation Result now 0.13387423935091278 AUC 0.4676647787901174 step 100 stagnant 60
+Validation Result now 0.1854493580599144 AUC 0.49951489780842157 step 120 stagnant 80
+Validation Result now 0.23548387096774195 AUC 0.5665107116473774 step 140 stagnant 100
+Validation Result now 0.26739926739926745 AUC 0.5697398013625544 step 160 stagnant 0
+Validation Result now 0.28461538461538466 AUC 0.597182139046212 step 180 stagnant 0
+Validation Result now 0.26736111111111105 AUC 0.5806517278174506 step 200 stagnant 0
+Validation Result now 0.3166332665330661 AUC 0.5858015267175573 step 220 stagnant 20
+Validation Result now 0.3099173553719008 AUC 0.5829409833374375 step 240 stagnant 0
+Validation Result now 0.2929936305732484 AUC 0.610562258885332 step 260 stagnant 20
+Validation Result now 0.2682445759368836 AUC 0.5886505786752032 step 280 stagnant 40
+Validation Result now 0.2991452991452992 AUC 0.5693006648608717 step 300 stagnant 60
+Validation Result now 0.30000000000000004 AUC 0.5669161946975294 step 320 stagnant 80
+Validation Result now 0.28448275862068967 AUC 0.541319871952721 step 340 stagnant 100
+Validation Result now 0.3058823529411765 AUC 0.5276918657145202 step 360 stagnant 120
+Validation Result now 0.29017857142857145 AUC 0.5403266847246163 step 380 stagnant 140
+Validation Result now 0.29425287356321833 AUC 0.5138824591644096 step 400 stagnant 160
+Validation Result now 0.2912621359223301 AUC 0.5216670770746121 step 420 stagnant 180
+Validation Result now 0.27557411273486426 AUC 0.5497496511532464 step 440 stagnant 200
+_15_obs_30____220.h5
+15 95
+(None, 1, 1) coeff (None, 10, 30) amplitude
+Validation Result now 0.1911491260691707 AUC 0.4691750800295494 step 0 stagnant 0
+Validation Result now 0.20288587669435945 AUC 0.4947820733809406 step 20 stagnant 0
+Validation Result now 0.16249999999999998 AUC 0.4556866124928179 step 40 stagnant 0
+Validation Result now 0.16234309623430962 AUC 0.49582697201017817 step 60 stagnant 20
+Validation Result now 0.166073546856465 AUC 0.47707214971681855 step 80 stagnant 40
+Validation Result now 0.23754789272030655 AUC 0.5389452515800706 step 100 stagnant 60
+Validation Result now 0.28502415458937197 AUC 0.5602815398506116 step 120 stagnant 0
+Validation Result now 0.2972972972972973 AUC 0.5586546827546581 step 140 stagnant 0
+Validation Result now 0.28375286041189934 AUC 0.5229615037347123 step 160 stagnant 0
+Validation Result now 0.3160493827160494 AUC 0.5809857998850857 step 180 stagnant 20
+Validation Result now 0.31999999999999995 AUC 0.5846458179430353 step 200 stagnant 0
+Validation Result now 0.3144963144963145 AUC 0.5544217352047935 step 220 stagnant 0
+Validation Result now 0.30162412993039445 AUC 0.5549421324796848 step 240 stagnant 20
+Validation Result now 0.3018018018018018 AUC 0.5382319625707954 step 260 stagnant 40
+Validation Result now 0.30117647058823527 AUC 0.5509972913075597 step 280 stagnant 60
+Validation Result now 0.3147699757869249 AUC 0.5715628334564558 step 300 stagnant 80
+Validation Result now 0.3196125907990315 AUC 0.5232652056143807 step 320 stagnant 100
+Validation Result now 0.2972972972972973 AUC 0.5323647705819584 step 340 stagnant 120
+Validation Result now 0.3147699757869249 AUC 0.5464409422966429 step 360 stagnant 140
+Validation Result now 0.32225063938618925 AUC 0.5494705737503078 step 380 stagnant 160
+Validation Result now 0.32116788321167883 AUC 0.5556045309037183 step 400 stagnant 0
+Validation Result now 0.3386243386243386 AUC 0.5491020274152507 step 420 stagnant 20
+Validation Result now 0.30092592592592593 AUC 0.5310769104489863 step 440 stagnant 0
+Validation Result now 0.3091334894613583 AUC 0.5037215792497743 step 460 stagnant 20
+Validation Result now 0.3259259259259259 AUC 0.5213477796930148 step 480 stagnant 40
+Validation Result now 0.3178484107579462 AUC 0.5412082409915456 step 500 stagnant 60
+Validation Result now 0.328125 AUC 0.5528055487154231 step 520 stagnant 80
+Validation Result now 0.3062645011600928 AUC 0.5313157678732661 step 540 stagnant 100
+Validation Result now 0.3173076923076923 AUC 0.5307846999917919 step 560 stagnant 120
+Validation Result now 0.3180722891566265 AUC 0.532075843388328 step 580 stagnant 140
+Validation Result now 0.3168316831683168 AUC 0.5375006156119182 step 600 stagnant 160
+Validation Result now 0.3144963144963145 AUC 0.5475933678076008 step 620 stagnant 180
+Validation Result now 0.30985915492957744 AUC 0.5370762537962734 step 640 stagnant 200
+_15_obs_30____420.h5
+15 95
+(None, 1, 1) coeff (None, 10, 30) amplitude
+Validation Result now 0.19874312647289868 AUC 0.5233029631453665 step 0 stagnant 0
+Validation Result now 0.1904414447282014 AUC 0.48727653287367634 step 20 stagnant 0
+Validation Result now 0.1824212271973466 AUC 0.4973750307805959 step 40 stagnant 20
+Validation Result now 0.18577075098814227 AUC 0.5216120824099155 step 60 stagnant 40
+Validation Result now 0.22073578595317725 AUC 0.5417852745629155 step 80 stagnant 60
+Validation Result now 0.2907488986784141 AUC 0.5280801116309612 step 100 stagnant 0
+Validation Result now 0.27385892116182575 AUC 0.4990790445703029 step 120 stagnant 0
+Validation Result now 0.30205949656750575 AUC 0.5333251251744233 step 140 stagnant 20
+Validation Result now 0.29411764705882354 AUC 0.4897964376590331 step 160 stagnant 0
+Validation Result now 0.28884026258205686 AUC 0.521150783879176 step 180 stagnant 20
+Validation Result now 0.296629213483146 AUC 0.5169408191742593 step 200 stagnant 40
+Validation Result now 0.320388349514563 AUC 0.529615037347123 step 220 stagnant 60
+Validation Result now 0.3127962085308057 AUC 0.534924074530083 step 240 stagnant 0
+Validation Result now 0.29596412556053814 AUC 0.5364557169826808 step 260 stagnant 20
+Validation Result now 0.33406593406593404 AUC 0.5869244028564393 step 280 stagnant 40
+Validation Result now 0.29464285714285715 AUC 0.5458721168841829 step 300 stagnant 0
+Validation Result now 0.3091334894613583 AUC 0.5211754083559057 step 320 stagnant 20
+Validation Result now 0.3091334894613583 AUC 0.5198670278256587 step 340 stagnant 40
+Validation Result now 0.30805687203791465 AUC 0.5267430025445292 step 360 stagnant 60
+Validation Result now 0.31884057971014496 AUC 0.5599803004186161 step 380 stagnant 80
+Validation Result now 0.3180722891566265 AUC 0.5604777148485595 step 400 stagnant 100
+Validation Result now 0.3196125907990315 AUC 0.5636050233932529 step 420 stagnant 120
+Validation Result now 0.3243243243243243 AUC 0.5588048920627103 step 440 stagnant 140
+Validation Result now 0.3113207547169811 AUC 0.5534892883526226 step 460 stagnant 160
+Validation Result now 0.3069767441860465 AUC 0.5702815398506116 step 480 stagnant 180
+Validation Result now 0.3246753246753247 AUC 0.5591274727078717 step 500 stagnant 200
+_15_obs_30____280.h5
+15 95
+(None, 1, 1) coeff (None, 10, 30) amplitude
+Validation Result now 0.18614564831261102 AUC 0.4525790035295083 step 0 stagnant 0
+Validation Result now 0.18581560283687945 AUC 0.44375851596486904 step 20 stagnant 0
+Validation Result now 0.18752362948960305 AUC 0.4520003283263564 step 40 stagnant 20
+Validation Result now 0.18773157678056815 AUC 0.4612090618074366 step 60 stagnant 0
+Validation Result now 0.1956241956241956 AUC 0.4622383649347451 step 80 stagnant 0
+Validation Result now 0.19768403639371385 AUC 0.5367191988836904 step 100 stagnant 0
+Validation Result now 0.19660194174757278 AUC 0.5023220881556267 step 120 stagnant 0
+Validation Result now 0.1482367005379558 AUC 0.4497742756299762 step 140 stagnant 20
+Validation Result now 0.21828103683492495 AUC 0.4914118033325125 step 160 stagnant 40
+Validation Result now 0.26326963906581735 AUC 0.5020520397274892 step 180 stagnant 0
+Validation Result now 0.2945054945054945 AUC 0.49708528277107444 step 200 stagnant 0
+Validation Result now 0.31862745098039214 AUC 0.4842953295575802 step 220 stagnant 0
+Validation Result now 0.3177083333333333 AUC 0.4907042600344743 step 240 stagnant 0
+Validation Result now 0.3127962085308057 AUC 0.48249199704506274 step 260 stagnant 20
+Validation Result now 0.339622641509434 AUC 0.4870705080850365 step 280 stagnant 40
+Validation Result now 0.3160493827160494 AUC 0.48487646720840516 step 300 stagnant 0
+Validation Result now 0.32569974554707376 AUC 0.49247393909546094 step 320 stagnant 20
+Validation Result now 0.3 AUC 0.47570877452187477 step 340 stagnant 40
+Validation Result now 0.315 AUC 0.4928252482968071 step 360 stagnant 60
+Validation Result now 0.3142857142857143 AUC 0.49832881884593283 step 380 stagnant 80
+Validation Result now 0.32116788321167883 AUC 0.49736189772634 step 400 stagnant 100
+Validation Result now 0.32116788321167883 AUC 0.4975235984568661 step 420 stagnant 120
+Validation Result now 0.34852546916890076 AUC 0.48999015020930803 step 440 stagnant 140
+Validation Result now 0.3324675324675325 AUC 0.49277189526389226 step 460 stagnant 0
+Validation Result now 0.320388349514563 AUC 0.4970926701140934 step 480 stagnant 20
+Validation Result now 0.30805687203791465 AUC 0.5051539029795616 step 500 stagnant 40
+Validation Result now 0.31553398058252424 AUC 0.48216449150455554 step 520 stagnant 60
+Validation Result now 0.320388349514563 AUC 0.48201099893293936 step 540 stagnant 80
+Validation Result now 0.326530612244898 AUC 0.47464253467947143 step 560 stagnant 100
+Validation Result now 0.3283582089552239 AUC 0.47427398834441437 step 580 stagnant 120
+Validation Result now 0.33248081841432225 AUC 0.4771041615365674 step 600 stagnant 140
+Validation Result now 0.3350253807106599 AUC 0.48519822703767546 step 620 stagnant 160
+Validation Result now 0.327455919395466 AUC 0.48684067963555777 step 640 stagnant 180
+Validation Result now 0.31527093596059114 AUC 0.4967676270212591 step 660 stagnant 200
+_15_obs_30____440.h5
+15 95
+(None, 1, 1) coeff (None, 10, 30) amplitude
+Validation Result now 0.19904837430610625 AUC 0.5153156037100879 step 0 stagnant 0
+Validation Result now 0.19435028248587569 AUC 0.4802757941393746 step 20 stagnant 0
+Validation Result now 0.18990654205607477 AUC 0.48097430846261185 step 40 stagnant 20
+Validation Result now 0.16743794699200673 AUC 0.44721989657719774 step 60 stagnant 40
+Validation Result now 0.18025078369905956 AUC 0.48146433554953627 step 80 stagnant 60
+Validation Result now 0.22058823529411764 AUC 0.5322235902487071 step 100 stagnant 80
+Validation Result now 0.24260355029585798 AUC 0.570004924895346 step 120 stagnant 0
+Validation Result now 0.20412844036697245 AUC 0.5408717064762374 step 140 stagnant 0
+Validation Result now 0.21702838063439062 AUC 0.5008766313715833 step 160 stagnant 20
+Validation Result now 0.23142857142857146 AUC 0.511118772059427 step 180 stagnant 40
+Validation Result now 0.2584493041749503 AUC 0.5421669539522285 step 200 stagnant 60
+Validation Result now 0.26294820717131473 AUC 0.5018246737256833 step 220 stagnant 0
+Validation Result now 0.29464285714285715 AUC 0.49239924484938025 step 240 stagnant 0
+Validation Result now 0.2838709677419355 AUC 0.47189198062874493 step 260 stagnant 0
+Validation Result now 0.28326180257510725 AUC 0.48208815562669294 step 280 stagnant 20
+Validation Result now 0.27906976744186046 AUC 0.48660756792251497 step 300 stagnant 40
+Validation Result now 0.2796610169491525 AUC 0.48585652138225394 step 320 stagnant 60
+Validation Result now 0.2744282744282744 AUC 0.491320692768612 step 340 stagnant 80
+Validation Result now 0.29333333333333333 AUC 0.5083485184273168 step 360 stagnant 100
+Validation Result now 0.2901098901098901 AUC 0.5051653944020356 step 380 stagnant 120
+Validation Result now 0.2529182879377432 AUC 0.5091685135024214 step 400 stagnant 140
+Validation Result now 0.26347305389221554 AUC 0.5144890421078553 step 420 stagnant 160
+Validation Result now 0.2645290581162324 AUC 0.5155840105064433 step 440 stagnant 180
+Validation Result now 0.2744282744282744 AUC 0.5126077320856932 step 460 stagnant 200
+_15_obs_30____240.h5
+15 95
+(None, 1, 1) coeff (None, 10, 30) amplitude
+Validation Result now 0.18392418392418391 AUC 0.5 step 0 stagnant 0
+Validation Result now 0.18392418392418391 AUC 0.5 step 20 stagnant 0
+Validation Result now 0.18392418392418391 AUC 0.5 step 40 stagnant 0
+Validation Result now 0.18392418392418391 AUC 0.5 step 60 stagnant 0
+Validation Result now 0.18392418392418391 AUC 0.5 step 80 stagnant 0
+Validation Result now 0.18392418392418391 AUC 0.5 step 100 stagnant 0
+Validation Result now 0.18392418392418391 AUC 0.5 step 120 stagnant 0
+Validation Result now 0.18392418392418391 AUC 0.5 step 140 stagnant 0
+Validation Result now 0.18398876404494383 AUC 0.5002150537634409 step 160 stagnant 0
+Validation Result now 0.18411806043569923 AUC 0.5006451612903227 step 180 stagnant 0
+Validation Result now 0.1842475386779184 AUC 0.5010752688172043 step 200 stagnant 0
+Validation Result now 0.18411806043569923 AUC 0.5006451612903227 step 220 stagnant 0
+Validation Result now 0.18418277680140596 AUC 0.5008602150537634 step 240 stagnant 20
+Validation Result now 0.1845070422535211 AUC 0.5019354838709678 step 260 stagnant 40
+Validation Result now 0.19844834626378113 AUC 0.49459738980546664 step 280 stagnant 0
+Validation Result now 0.20480928689883912 AUC 0.5257309365509316 step 300 stagnant 0
+Validation Result now 0.18485059068797774 AUC 0.5091939587950423 step 320 stagnant 0
+Validation Result now 0.26451612903225813 AUC 0.5744020356234097 step 340 stagnant 20
+Validation Result now 0.22421524663677128 AUC 0.5569301485676763 step 360 stagnant 0
+Validation Result now 0.26519337016574585 AUC 0.575654600673069 step 380 stagnant 20
+Validation Result now 0.29850746268656714 AUC 0.5798760568004597 step 400 stagnant 0
+Validation Result now 0.29583333333333334 AUC 0.5687211688418288 step 420 stagnant 0
+Validation Result now 0.28817204301075267 AUC 0.5727316752852334 step 440 stagnant 20
+Validation Result now 0.2991452991452992 AUC 0.5709767709102849 step 460 stagnant 40
+Validation Result now 0.29723991507430997 AUC 0.5777993925962407 step 480 stagnant 0
+Validation Result now 0.29723991507430997 AUC 0.557368464253468 step 500 stagnant 20
+Validation Result now 0.2899786780383795 AUC 0.5613592711154887 step 520 stagnant 40
+Validation Result now 0.30092592592592593 AUC 0.5996010834769762 step 540 stagnant 60
+Validation Result now 0.3044315992292871 AUC 0.5868620208487236 step 560 stagnant 0
+Validation Result now 0.2904564315352697 AUC 0.5930041861610441 step 580 stagnant 0
+Validation Result now 0.30973451327433627 AUC 0.6034925716161865 step 600 stagnant 20
+Validation Result now 0.3076923076923077 AUC 0.5982286793072313 step 620 stagnant 0
+Validation Result now 0.30196936542669583 AUC 0.5765328736764344 step 640 stagnant 20
+Validation Result now 0.2929936305732484 AUC 0.5798038250020521 step 660 stagnant 40
+Validation Result now 0.28314606741573034 AUC 0.5779701223015677 step 680 stagnant 60
+Validation Result now 0.2769857433808554 AUC 0.5695748173684643 step 700 stagnant 80
+Validation Result now 0.2959427207637232 AUC 0.5809981121234506 step 720 stagnant 100
+Validation Result now 0.2839756592292089 AUC 0.5812304030206024 step 740 stagnant 120
+Validation Result now 0.28511530398322854 AUC 0.5807264220635311 step 760 stagnant 140
+Validation Result now 0.30803571428571425 AUC 0.5960116555856521 step 780 stagnant 160
+Validation Result now 0.2833333333333334 AUC 0.5859993433472872 step 800 stagnant 180
+Validation Result now 0.28750000000000003 AUC 0.5477772305671837 step 820 stagnant 200
+_15_obs_30____600.h5

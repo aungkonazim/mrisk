@@ -317,17 +317,17 @@ def set_gpu():
             # Visible devices must be set before GPUs have been initialized
             print(e)
             
-gpu_id =  3
+gpu_id =  1
 set_gpu()
 
 
 softmax_weight = 10
 revised_loss_weight = 50
-triplet_loss = True
+triplet_loss = False
 n_iters = 50
 batch_size = 200
 epochs = 1000
-model_name = 'dres'
+model_name = 'ddhi'
 episode_only = False
 if model_name=='dres':
     episode_only = False
@@ -336,20 +336,22 @@ obs = 30
 n_groups_split = 3
 n_val_groups = 5
 
-ratios = [.2,.1,.15,.3,.35,.4]
-if triplet_loss:
+ratios = [.25,.3,.35,.4]
+if triplet_loss or revised_loss_weight == 0:
     ratios = ratios[:1]
-    
+
+ratios = [.2]
+ 
 for ratio_of_pos_to_neg in ratios:     
     print("<-->"*80,ratio_of_pos_to_neg)
-    for n_cluster in [4]: 
+    for n_cluster in [8]: 
         name_of_this_iteration = "_".join([str(a) for a in ['model_name',model_name,'episode',episode_only,
                                                                              'cross_entropy_weight',softmax_weight,
                                                                              'loss_weight',revised_loss_weight,
                                                                              'is_triplet',triplet_loss,
                                                                              'ratio',ratio_of_pos_to_neg,
                                                                              'n_cluster',n_cluster,
-                                                                             'lag',n_lag,'obs',obs]])
+                                                                             'lag',n_lag,'obs',obs,'iters',n_iters]])
         print(name_of_this_iteration)
         output_filename = '../data/final_output/'+name_of_this_iteration+".p"
 
